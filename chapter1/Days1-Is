@@ -1,0 +1,5 @@
+Command: ls
+Usage: list files
+Examples: ls -l, ls -a
+ls -l ファイルの詳細情報を表示する
+ls -a 隠しファイルも含めた全てのファイルを表示する
