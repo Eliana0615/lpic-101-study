@@ -1,0 +1,19 @@
+Command: cd
+Usage: change directory
+Examples: cd /, cd -, cd ~/ 
+
+
+ディレクトリを移動する
+
+
+実装例
+sh-5.1$ cd -                                     直前にいたディレクトリに戻るコマンド
+/home/ssm-user
+sh-5.1$ cd                                       cd コマンドを引数なしで実行すると、ユーザーのホームディレクトリに移動します。通常、成功した場合には何も出力されません。
+sh-5.1$ cd /home/user/documents                  この出力は、指定された絶対パス /home/user/documents にディレクトリが存在しないことを示しています。
+sh: cd: /home/user/documents: No such file or directory
+sh-5.1$ cd documents                             上記と同様に、現在のディレクトリ内に documents という名前のディレクトリが存在しないことを示しています。
+sh: cd: documents: No such file or directory
+sh-5.1$ cd ..                                    cd .. は一つ上の階層のディレクトリに移動するコマンドです。通常、成功した場合には何も出力されません。
+sh-5.1$ ^C                                        ^C は割り込みシグナル（通常は Ctrl+C）で、現在のコマンド (cd .. の後のプロンプトで入力されたと仮定) を中断・終了させます。シェルは新しいプロンプトを表示して待機状態になります。
+sh-5.1$
