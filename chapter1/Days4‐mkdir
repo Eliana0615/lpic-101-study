@@ -1,0 +1,13 @@
+Command: mkdir
+Usage: create directory
+Examples: mkdir test, mkdir -p a/b/c
+
+
+make directory
+
+sh-5.1$ cd ~
+sh-5.1$ mkdir work
+sh-5.1$ ls -F
+work/
+sh-5.1$ ^C
+sh-5.1$
