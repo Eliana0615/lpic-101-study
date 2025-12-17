@@ -1,0 +1,10 @@
+remove directory
+
+sh-5.1$ cd ~/work/
+sh-5.1$ mkdir newdir              newdirという新しいディレクトリを作成する
+sh-5.1$ ls -F                   ファイル種別を表示する
+newdir/
+sh-5.1$ rmdir newdir/            newdirという新しいディレクトリを削除する
+sh-5.1$ ls -F                    ファイル種別を表示する（何も表示していないので、削除済み）
+sh-5.1$ ^C
+sh-5.1$
